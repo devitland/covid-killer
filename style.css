@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 50px;  
+  background-image: url("img/fon.png");
+  color: #db5953;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #db5953;
+  font-weight: bold;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #d9e9fe;
+  color: black;
+}
+
+.row {  
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+h2{
+  text-align: center; 
+  background-color: #db5953; 
+  padding: 20px;
+  color: white;
+}
+
+.main {   
+  flex: 15%;
+  padding: 20px 0;
+  background-color: #e9f6f9;
+  margin: 10px;
+  border: 3px solid black;
+}
+
+.main h3{
+  text-align: center;
+}
+
+.main2 {   
+  flex: 25%;
+  background-color:#e9f6f9;
+  padding: 20px;
+}
+
+.img {  
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+button{
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+  margin: 10px auto;
+}
+
+button:hover { background: rgb(53, 167, 110); }
+
+button:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+iframe{
+  border: 1px solid black;
+  background-color: #d9e9fe;
+}
+
+.footer {
+  padding: 10px;  
+  background:#d9e9fe;
+}
+
+/
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
